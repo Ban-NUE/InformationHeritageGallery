@@ -1,0 +1,1515 @@
+<!DOCTYPE html>
+<html>
+
+
+  <head>
+    <meta charset="UTF-8">
+    <title>情報遺産ギャラリー展示物画像（スマホ等でのマーカー読取利用）</title>
+
+    <!-- A-Frame読込 -->
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+    <script src="js/gesture-detector.js"></script>
+    <script src="js/gesture-handler.js"></script>
+
+    <!-- AR.js読込 -->
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  </head>
+
+  <body style="margin: 0; overflow: hidden">
+    <!-- シーン作成，VRモードUI非表示 -->
+    <a-scene 
+      embedded
+      arjs
+      vr-mode-ui="enabled: false;" 
+      renderer="logarithmicDepthBuffer: true;"
+      gesture-detector>
+
+      <!-- マーカー設定 -->
+      <a-marker type="pattern" url="./pattern/3Dプリンタ造形-ABS.patt">
+
+        <!-- 3Dモデル読込 -->
+        <a-asset-item id="3Dプリンタ造形-ABS" src="./3D-model/3Dプリンタ造形-ABS.glb">
+        </a-asset-item>
+        <!-- 3Dモデル代替画像 -->
+        <a-image src="./3D-image/3Dプリンタ造形-ABS-img.png"
+          position="-0.9 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 説明文設定 -->
+        <a-image src="./text-image/3Dプリンタ造形-ABS-txt.png" 
+          position="0.5 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 3Dモデル呼出 -->
+        <a-entity 
+          position="-0.8 0 0"
+          rotation="0 0 0"  
+          scale="5 5 5"
+          class="clickable"
+          gesture-handler
+          gltf-model="#3Dプリンタ造形-ABS"
+          htmlembed>
+        </a-entity>
+        <!-- 操作方法表示 -->
+        <a-text
+          value="You can pinch in and out."
+          position="-0.9 -5 0"
+          rotation="-90 0 0" 
+          scale="1 1 1"
+          color="red">
+        </a-text>
+      </a-marker>
+
+      <!-- マーカー設定 -->
+      <a-marker type="pattern" url="./pattern/3Dプリンタ造形-石膏.patt">
+        <!-- 3Dモデル読込 -->
+        <a-asset-item id="3Dプリンタ造形-石膏" src="./3D-model/3Dプリンタ造形-石膏.glb">
+        </a-asset-item>
+        <!-- 3Dモデル代替画像 -->
+        <a-image src="./3D-image/3Dプリンタ造形-石膏-img.png"
+          position="-0.9 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 説明文設定 -->
+        <a-image src="./text-image/3Dプリンタ造形-石膏-txt.png" 
+          position="0.5 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 3Dモデル呼出 -->
+        <a-entity 
+          position="-0.9 0 0"
+          rotation="0 0 0"  
+          scale="5 5 5"
+          class="clickable"
+          gesture-handler
+          gltf-model="#3Dプリンタ造形-石膏"
+          htmlembed>
+        </a-entity>
+        <!-- 操作方法表示 -->
+        <a-text
+          value="You can pinch in and out."
+          position="-0.9 -5 0"
+          rotation="-90 0 0" 
+          scale="1 1 1"
+          color="red">
+        </a-text>
+      </a-marker>
+
+      <!-- マーカー設定 -->
+      <a-marker type="pattern" url="./pattern/CPU.patt">
+        <!-- 3Dモデル読込 -->
+        <a-asset-item id="CPU" src="./3D-model/CPU.glb">
+        </a-asset-item>
+        <!-- 説明文設定 -->
+        <a-image src="./text-image/CPU-txt.png" 
+          position="0.5 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 3Dモデル呼出 -->
+        <a-entity 
+          position="-0.8 0 0"
+          rotation="0 0 0"  
+          scale="5 5 5"
+          class="clickable"
+          gesture-handler
+          gltf-model="#CPU"
+          htmlembed>
+        </a-entity>
+        <!-- 操作方法表示 -->
+        <a-text
+          value="You can pinch in and out."
+          position="-0.9 -5 0"
+          rotation="-90 0 0" 
+          scale="1 1 1"
+          color="red">
+        </a-text>
+      </a-marker>
+
+      <!-- マーカー設定 -->
+      <a-marker type="pattern" url="./pattern/HDD内部構造.patt">
+        <!-- 3Dモデル読込 -->
+        <a-asset-item id="HDD内部構造" src="./3D-model/HDD内部構造.glb">
+        </a-asset-item>
+        <!-- 3Dモデル代替画像 -->
+        <a-image src="./3D-image/HDD内部構造-img.png"
+          position="-0.9 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 説明文設定 -->
+        <a-image src="./text-image/HDD内部構造-txt.png" 
+          position="0.5 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 3Dモデル呼出 -->
+        <a-entity 
+          position="-0.8 0 0"
+          rotation="0 0 0"  
+          scale="5 5 5"
+          class="clickable"
+          gesture-handler
+          gltf-model="#HDD内部構造"
+          htmlembed>
+        </a-entity>
+        <!-- 操作方法表示 -->
+        <a-text
+          value="You can pinch in and out."
+          position="-0.9 -5 0"
+          rotation="-90 0 0" 
+          scale="1 1 1"
+          color="red">
+        </a-text>
+      </a-marker>
+
+      <!-- マーカー設定 -->
+      <a-marker type="pattern" url="./pattern/NOVAミニコンHDD.patt">
+        <!-- 3Dモデル読込 -->
+        <a-asset-item id="NOVAミニコンHDD" src="./3D-model/NOVAミニコンHDD.glb">
+        </a-asset-item>
+        <!-- 3Dモデル代替画像 -->
+        <a-image src="./3D-image/NOVAミニコンHDD-img.png"
+          position="-0.9 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 説明文設定 -->
+        <a-image src="./text-image/NOVAミニコンHDD-txt.png" 
+          position="0.5 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 3Dモデル呼出 -->
+        <a-entity 
+          position="-0.8 0 0"
+          rotation="0 0 0"  
+          scale="5 5 5"
+          class="clickable"
+          gesture-handler
+          gltf-model="#NOVAミニコンHDD"
+          htmlembed>
+        </a-entity>
+        <!-- 操作方法表示 -->
+        <a-text
+          value="You can pinch in and out."
+          position="-0.9 -5 0"
+          rotation="-90 0 0" 
+          scale="1 1 1"
+          color="red">
+        </a-text>
+      </a-marker>
+
+      <!-- マーカー設定 -->
+      <a-marker type="pattern" url="./pattern/PICマイコン.patt">
+        <!-- 3Dモデル読込 -->
+        <a-asset-item id="PICマイコン" src="./3D-model/PICマイコン.glb">
+        </a-asset-item>
+        <!-- 3Dモデル代替画像 -->
+        <a-image src="./3D-image/PICマイコン-img.png"
+          position="-0.9 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 説明文設定 -->
+        <a-image src="./text-image/PICマイコン-txt.png" 
+          position="0.5 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 3Dモデル呼出 -->
+        <a-entity 
+          position="-0.8 0 0"
+          rotation="0 0 0"  
+          scale="5 5 5"
+          class="clickable"
+          gesture-handler
+          gltf-model="#PICマイコン"
+          htmlembed>
+        </a-entity>
+        <!-- 操作方法表示 -->
+        <a-text
+          value="You can pinch in and out."
+          position="-0.9 -5 0"
+          rotation="-90 0 0" 
+          scale="1 1 1"
+          color="red">
+        </a-text>
+      </a-marker>
+
+      <!-- マーカー設定 -->
+      <a-marker type="pattern" url="./pattern/Speak&Spell.patt">
+        <!-- 3Dモデル読込 -->
+        <a-asset-item id="Speak&Spell" src="./3D-model/Speak&Spell.glb">
+        </a-asset-item>
+        <!-- 3Dモデル代替画像 -->
+        <a-image src="./3D-image/Speak&Spell-img.png"
+          position="-0.9 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 説明文設定 -->
+        <a-image src="./text-image/Speak&Spell-txt.png" 
+          position="0.5 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 3Dモデル呼出 -->
+        <a-entity 
+          position="-0.8 0 0"
+          rotation="0 0 0"  
+          scale="5 5 5"
+          class="clickable"
+          gesture-handler
+          gltf-model="#Speak&Spell"
+          htmlembed>
+        </a-entity>
+        <!-- 操作方法表示 -->
+        <a-text
+          value="You can pinch in and out."
+          position="-0.9 -5 0"
+          rotation="-90 0 0" 
+          scale="1 1 1"
+          color="red">
+        </a-text>
+      </a-marker>
+
+      <!-- マーカー設定 -->
+      <a-marker type="pattern" url="./pattern/アナログコンピュータ.patt">
+        <!-- 3Dモデル読込 -->
+        <a-asset-item id="アナログコンピュータ" src="./3D-model/アナログコンピュータ.glb">
+        </a-asset-item>
+        <!-- 3Dモデル代替画像 -->
+        <a-image src="./3D-image/アナログコンピュータ-img.png"
+          position="-0.9 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 説明文設定 -->
+        <a-image src="./text-image/アナログコンピュータ-txt.png" 
+          position="0.5 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 3Dモデル呼出 -->
+        <a-entity 
+          position="-0.8 0 0"
+          rotation="0 0 0"  
+          scale="5 5 5"
+          class="clickable"
+          gesture-handler
+          gltf-model="#アナログコンピュータ"
+          htmlembed>
+        </a-entity>
+        <!-- 操作方法表示 -->
+        <a-text
+          value="You can pinch in and out."
+          position="-0.9 -5 0"
+          rotation="-90 0 0" 
+          scale="1 1 1"
+          color="red">
+        </a-text>
+      </a-marker>
+
+      <!-- マーカー設定 -->
+      <a-marker type="pattern" url="./pattern/シッカート計算器.patt">
+        <!-- 3Dモデル読込 -->
+        <a-asset-item id="シッカート計算器" src="./3D-model/シッカート計算器.glb">
+        </a-asset-item>
+        <!-- 説明文設定 -->
+        <a-image src="./text-image/シッカート計算器-txt.png" 
+          position="0.5 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 3Dモデル呼出 -->
+        <a-entity 
+          position="-0.8 0 0"
+          rotation="0 0 0"  
+          scale="5 5 5"
+          class="clickable"
+          gesture-handler
+          gltf-model="#シッカート計算器"
+          htmlembed>
+        </a-entity>
+        <!-- 操作方法表示 -->
+        <a-text
+          value="You can pinch in and out."
+          position="-0.9 -5 0"
+          rotation="-90 0 0" 
+          scale="1 1 1"
+          color="red">
+        </a-text>
+      </a-marker>
+
+      <!-- マーカー設定 -->
+      <a-marker type="pattern" url="./pattern/シリコンウェーハ.patt">
+        <!-- 3Dモデル読込 -->
+        <a-asset-item id="シリコンウェーハ" src="./3D-model/シリコンウェーハ.glb">
+        </a-asset-item>
+        <!-- 3Dモデル代替画像 -->
+        <a-image src="./3D-image/シリコンウェーハ-img.png"
+          position="-0.9 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 説明文設定 -->
+        <a-image src="./text-image/シリコンウェーハ-txt.png" 
+          position="0.5 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 3Dモデル呼出 -->
+        <a-entity 
+          position="-0.8 0 0"
+          rotation="0 0 0"  
+          scale="5 5 5"
+          class="clickable"
+          gesture-handler
+          gltf-model="#シリコンウェーハ"
+          htmlembed>
+        </a-entity>
+        <!-- 操作方法表示 -->
+        <a-text
+          value="You can pinch in and out."
+          position="-0.9 -5 0"
+          rotation="-90 0 0" 
+          scale="1 1 1"
+          color="red">
+        </a-text>
+      </a-marker>
+
+      <!-- マーカー設定 -->
+      <a-marker type="pattern" url="./pattern/そろばん材料・玩具.patt">
+        <!-- 3Dモデル読込 -->
+        <a-asset-item id="そろばん材料・玩具" src="./3D-model/そろばん材料・玩具.glb">
+        </a-asset-item>
+        <!-- 説明文設定 -->
+        <a-image src="./text-image/そろばん材料・玩具-txt.png" 
+          position="0.5 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 3Dモデル呼出 -->
+        <a-entity 
+          position="-0.8 0 0"
+          rotation="0 0 0"  
+          scale="5 5 5"
+          class="clickable"
+          gesture-handler
+          gltf-model="#そろばん材料・玩具"
+          htmlembed>
+        </a-entity>
+        <!-- 操作方法表示 -->
+        <a-text
+          value="You can pinch in and out."
+          position="-0.9 -5 0"
+          rotation="-90 0 0" 
+          scale="1 1 1"
+          color="red">
+        </a-text>
+      </a-marker>
+
+      <!-- マーカー設定 -->
+      <a-marker type="pattern" url="./pattern/ネイピア棒.patt">
+        <!-- 3Dモデル読込 -->
+        <a-asset-item id="ネイピア棒" src="./3D-model/ネイピア棒.glb">
+        </a-asset-item>
+        <!-- 3Dモデル代替画像 -->
+        <a-image src="./3D-image/ネイピア棒-img.png"
+          position="-0.9 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 説明文設定 -->
+        <a-image src="./text-image/ネイピア棒-txt.png" 
+          position="0.5 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 3Dモデル呼出 -->
+        <a-entity 
+          position="-0.8 0 0"
+          rotation="0 0 0"  
+          scale="5 5 5"
+          class="clickable"
+          gesture-handler
+          gltf-model="#ネイピア棒"
+          htmlembed>
+        </a-entity>
+        <!-- 操作方法表示 -->
+        <a-text
+          value="You can pinch in and out."
+          position="-0.9 -5 0"
+          rotation="-90 0 0" 
+          scale="1 1 1"
+          color="red">
+        </a-text>
+      </a-marker>
+
+      <!-- マーカー設定 -->
+      <a-marker type="pattern" url="./pattern/ノートパソコン.patt">
+        <!-- 3Dモデル読込 -->
+        <a-asset-item id="ノートパソコン" src="./3D-model/ノートパソコン.glb">
+        </a-asset-item>
+        <!-- 3Dモデル代替画像 -->
+        <a-image src="./3D-image/ノートパソコン-img.png"
+          position="-0.9 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 説明文設定 -->
+        <a-image src="./text-image/ノートパソコン-txt.png" 
+          position="0.5 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 3Dモデル呼出 -->
+        <a-entity 
+          position="-0.8 0 0"
+          rotation="0 0 0"  
+          scale="5 5 5"
+          class="clickable"
+          gesture-handler
+          gltf-model="#ノートパソコン"
+          htmlembed>
+        </a-entity>
+        <!-- 操作方法表示 -->
+        <a-text
+          value="You can pinch in and out."
+          position="-0.9 -5 0"
+          rotation="-90 0 0" 
+          scale="1 1 1"
+          color="red">
+        </a-text>
+      </a-marker>
+
+      <!-- マーカー設定 -->
+      <a-marker type="pattern" url="./pattern/パーソナルコンピュータ.patt">
+        <!-- 3Dモデル読込 -->
+        <a-asset-item id="パーソナルコンピュータ" src="./3D-model/パーソナルコンピュータ.glb">
+        </a-asset-item>
+        <!-- 3Dモデル代替画像 -->
+        <a-image src="./3D-image/パーソナルコンピュータ-img.png"
+          position="-0.9 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 説明文設定 -->
+        <a-image src="./text-image/パーソナルコンピュータ-txt.png" 
+          position="0.5 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 3Dモデル呼出 -->
+        <a-entity 
+          position="-0.8 0 0"
+          rotation="0 0 0"  
+          scale="5 5 5"
+          class="clickable"
+          gesture-handler
+          gltf-model="#パーソナルコンピュータ"
+          htmlembed>
+        </a-entity>
+        <!-- 操作方法表示 -->
+        <a-text
+          value="You can pinch in and out."
+          position="-0.9 -5 0"
+          rotation="-90 0 0" 
+          scale="1 1 1"
+          color="red">
+        </a-text>
+      </a-marker>
+
+      <!-- マーカー設定 -->
+      <a-marker type="pattern" url="./pattern/パピルス.patt">
+        <!-- 3Dモデル読込 -->
+        <a-asset-item id="パピルス" src="./3D-model/パピルス.glb">
+        </a-asset-item>
+        <!-- 3Dモデル代替画像 -->
+        <a-image src="./3D-image/パピルス-img.png"
+          position="-0.9 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 説明文設定 -->
+        <a-image src="./text-image/パピルス-txt.png" 
+          position="0.5 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 3Dモデル呼出 -->
+        <a-entity 
+          position="-0.8 0 0"
+          rotation="0 0 0"  
+          scale="5 5 5"
+          class="clickable"
+          gesture-handler
+          gltf-model="#パピルス"
+          htmlembed>
+        </a-entity>
+        <!-- 操作方法表示 -->
+        <a-text
+          value="You can pinch in and out."
+          position="-0.9 -5 0"
+          rotation="-90 0 0" 
+          scale="1 1 1"
+          color="red">
+        </a-text>
+      </a-marker>
+
+      <!-- マーカー設定 -->
+      <a-marker type="pattern" url="./pattern/マザーボード.patt">
+        <!-- 3Dモデル読込 -->
+        <a-asset-item id="マザーボード" src="./3D-model/マザーボード.glb">
+        </a-asset-item>
+        <!-- 3Dモデル代替画像 -->
+        <a-image src="./3D-image/マザーボード-img.png"
+          position="-0.9 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 説明文設定 -->
+        <a-image src="./text-image/マザーボード-txt.png" 
+          position="0.5 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 3Dモデル呼出 -->
+        <a-entity 
+          position="-0.8 0 0"
+          rotation="0 0 0"  
+          scale="5 5 5"
+          class="clickable"
+          gesture-handler
+          gltf-model="#マザーボード"
+          htmlembed>
+        </a-entity>
+        <!-- 操作方法表示 -->
+        <a-text
+          value="You can pinch in and out."
+          position="-0.9 -5 0"
+          rotation="-90 0 0" 
+          scale="1 1 1"
+          color="red">
+        </a-text>
+      </a-marker>
+
+      <!-- マーカー設定 -->
+      <a-marker type="pattern" url="./pattern/メモリ.patt">
+        <!-- 3Dモデル読込 -->
+        <a-asset-item id="メモリ" src="./3D-model/メモリ.glb">
+        </a-asset-item>
+        <!-- 説明文設定 -->
+        <a-image src="./text-image/メモリ-txt.png" 
+          position="0.5 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 3Dモデル呼出 -->
+        <a-entity 
+          position="-0.8 0 0"
+          rotation="0 0 0"  
+          scale="5 5 5"
+          class="clickable"
+          gesture-handler
+          gltf-model="#メモリ"
+          htmlembed>
+        </a-entity>
+        <!-- 操作方法表示 -->
+        <a-text
+          value="You can pinch in and out."
+          position="-0.9 -5 0"
+          rotation="-90 0 0" 
+          scale="1 1 1"
+          color="red">
+        </a-text>
+      </a-marker>
+
+      <!-- マーカー設定 -->
+      <a-marker type="pattern" url="./pattern/ユパナ.patt">
+        <!-- 3Dモデル読込 -->
+        <a-asset-item id="ユパナ" src="./3D-model/ユパナ.glb">
+        </a-asset-item>
+        <!-- 3Dモデル代替画像 -->
+        <a-image src="./3D-image/ユパナ-img.png"
+          position="-0.9 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 説明文設定 -->
+        <a-image src="./text-image/ユパナ-txt.png" 
+          position="0.5 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 3Dモデル呼出 -->
+        <a-entity 
+          position="-0.8 0 0"
+          rotation="0 0 0"  
+          scale="5 5 5"
+          class="clickable"
+          gesture-handler
+          gltf-model="#ユパナ"
+          htmlembed>
+        </a-entity>
+        <!-- 操作方法表示 -->
+        <a-text
+          value="You can pinch in and out."
+          position="-0.9 -5 0"
+          rotation="-90 0 0" 
+          scale="1 1 1"
+          color="red">
+        </a-text>
+      </a-marker>
+
+      <!-- マーカー設定 -->
+      <a-marker type="pattern" url="./pattern/ローマそろばん.patt">
+        <!-- 3Dモデル読込 -->
+        <a-asset-item id="ローマそろばん" src="./3D-model/ローマそろばん.glb">
+        </a-asset-item>
+        <!-- 3Dモデル代替画像 -->
+        <a-image src="./3D-image/ローマそろばん-img.png"
+          position="-0.9 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 説明文設定 -->
+        <a-image src="./text-image/ローマそろばん-txt.png" 
+          position="0.5 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 3Dモデル呼出 -->
+        <a-entity 
+          position="-0.8 0 0"
+          rotation="0 0 0"  
+          scale="5 5 5"
+          class="clickable"
+          gesture-handler
+          gltf-model="#ローマそろばん"
+          htmlembed>
+        </a-entity>
+        <!-- 操作方法表示 -->
+        <a-text
+          value="You can pinch in and out."
+          position="-0.9 -5 0"
+          rotation="-90 0 0" 
+          scale="1 1 1"
+          color="red">
+        </a-text>
+      </a-marker>
+
+      <!-- マーカー設定 -->
+      <a-marker type="pattern" url="./pattern/ワークステーション.patt">
+        <!-- 3Dモデル読込 -->
+        <a-asset-item id="ワークステーション" src="./3D-model/ワークステーション.glb">
+        </a-asset-item>
+        <!-- 3Dモデル代替画像 -->
+        <a-image src="./3D-image/ワークステーション-img.png"
+          position="-0.9 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 説明文設定 -->
+        <a-image src="./text-image/ワークステーション-txt.png" 
+          position="0.5 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 3Dモデル呼出 -->
+        <a-entity 
+          position="-0.8 0 0"
+          rotation="0 0 0"  
+          scale="5 5 5"
+          class="clickable"
+          gesture-handler
+          gltf-model="#ワークステーション"
+          htmlembed>
+        </a-entity>
+        <!-- 操作方法表示 -->
+        <a-text
+          value="You can pinch in and out."
+          position="-0.9 -5 0"
+          rotation="-90 0 0" 
+          scale="1 1 1"
+          color="red">
+        </a-text>
+      </a-marker>
+
+      <!-- マーカー設定 -->
+      <a-marker type="pattern" url="./pattern/ワープロ専用機-NEC-N5200.patt">
+        <!-- 3Dモデル読込 -->
+        <a-asset-item id="ワープロ専用機-NEC-N5200" src="./3D-model/ワープロ専用機-NEC-N5200.glb">
+        </a-asset-item>
+        <!-- 3Dモデル代替画像 -->
+        <a-image src="./3D-image/ワープロ専用機-NEC-N5200-img.png"
+          position="-0.9 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 説明文設定 -->
+        <a-image src="./text-image/ワープロ専用機-NEC-N5200-txt.png" 
+          position="0.5 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 3Dモデル呼出 -->
+        <a-entity 
+          position="-0.8 0 0"
+          rotation="0 0 0"  
+          scale="5 5 5"
+          class="clickable"
+          gesture-handler
+          gltf-model="#ワープロ専用機-NEC-N5200"
+          htmlembed>
+        </a-entity>
+        <!-- 操作方法表示 -->
+        <a-text
+          value="You can pinch in and out."
+          position="-0.9 -5 0"
+          rotation="-90 0 0" 
+          scale="1 1 1"
+          color="red">
+        </a-text>
+      </a-marker>
+
+      <!-- マーカー設定 -->
+      <a-marker type="pattern" url="./pattern/ワープロ専用機-Panasonic-FW-J770.patt">
+        <!-- 3Dモデル読込 -->
+        <a-asset-item id="ワープロ専用機-Panasonic-FW-J770" src="./3D-model/ワープロ専用機-Panasonic-FW-J770.glb">
+        </a-asset-item>
+        <!-- 3Dモデル代替画像 -->
+        <a-image src="./3D-image/ワープロ専用機-Panasonic-FW-J770-img.png"
+          position="-0.9 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 説明文設定 -->
+        <a-image src="./text-image/ワープロ専用機-Panasonic-FW-J770-txt.png" 
+          position="0.5 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 3Dモデル呼出 -->
+        <a-entity 
+          position="-0.8 0 0"
+          rotation="0 0 0"  
+          scale="5 5 5"
+          class="clickable"
+          gesture-handler
+          gltf-model="#ワープロ専用機-Panasonic-FW-J770"
+          htmlembed>
+        </a-entity>
+        <!-- 操作方法表示 -->
+        <a-text
+          value="You can pinch in and out."
+          position="-0.9 -5 0"
+          rotation="-90 0 0" 
+          scale="1 1 1"
+          color="red">
+        </a-text>
+      </a-marker>
+
+      <!-- マーカー設定 -->
+      <a-marker type="pattern" url="./pattern/計算尺.patt">
+        <!-- 3Dモデル読込 -->
+        <a-asset-item id="計算尺" src="./3D-model/計算尺.glb">
+        </a-asset-item>
+        <!-- 3Dモデル代替画像 -->
+        <a-image src="./3D-image/計算尺-img.png"
+          position="-0.9 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 説明文設定 -->
+        <a-image src="./text-image/計算尺-txt.png" 
+          position="0.5 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 3Dモデル呼出 -->
+        <a-entity 
+          position="-0.8 0 0"
+          rotation="0 0 0"  
+          scale="5 5 5"
+          class="clickable"
+          gesture-handler
+          gltf-model="#計算尺"
+          htmlembed>
+        </a-entity>
+        <!-- 操作方法表示 -->
+        <a-text
+          value="You can pinch in and out."
+          position="-0.9 -5 0"
+          rotation="-90 0 0" 
+          scale="1 1 1"
+          color="red">
+        </a-text>
+      </a-marker>
+
+      <!-- マーカー設定 -->
+      <a-marker type="pattern" url="./pattern/算額-学壽軒.patt">
+        <!-- 3Dモデル読込 -->
+        <a-asset-item id="算額-学壽軒" src="./3D-model/算額-学壽軒.glb">
+        </a-asset-item>
+        <!-- 3Dモデル代替画像 -->
+        <a-image src="./3D-image/算額-学壽軒-img.png"
+          position="-0.9 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 説明文設定 -->
+        <a-image src="./text-image/算額-学壽軒-txt.png" 
+          position="0.5 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 3Dモデル呼出 -->
+        <a-entity 
+          position="-0.8 0 0"
+          rotation="0 0 0"  
+          scale="5 5 5"
+          class="clickable"
+          gesture-handler
+          gltf-model="#算額-学壽軒"
+          htmlembed>
+        </a-entity>
+        <!-- 操作方法表示 -->
+        <a-text
+          value="You can pinch in and out."
+          position="-0.9 -5 0"
+          rotation="-90 0 0" 
+          scale="1 1 1"
+          color="red">
+        </a-text>
+      </a-marker>
+
+      <!-- マーカー設定 -->
+      <a-marker type="pattern" url="./pattern/算額-櫻井大権現.patt">
+        <!-- 3Dモデル読込 -->
+        <a-asset-item id="算額-櫻井大権現" src="./3D-model/算額-櫻井大権現.glb">
+        </a-asset-item>
+        <!-- 3Dモデル代替画像 -->
+        <a-image src="./3D-image/算額-櫻井大権現-img.png"
+          position="-0.9 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 説明文設定 -->
+        <a-image src="./text-image/算額-櫻井大権現-txt.png" 
+          position="0.5 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 3Dモデル呼出 -->
+        <a-entity 
+          position="-0.8 0 0"
+          rotation="0 0 0"  
+          scale="5 5 5"
+          class="clickable"
+          gesture-handler
+          gltf-model="#算額-櫻井大権現"
+          htmlembed>
+        </a-entity>
+        <!-- 操作方法表示 -->
+        <a-text
+          value="You can pinch in and out."
+          position="-0.9 -5 0"
+          rotation="-90 0 0" 
+          scale="1 1 1"
+          color="red">
+        </a-text>
+      </a-marker>
+
+      <!-- マーカー設定 -->
+      <a-marker type="pattern" url="./pattern/磁気テープ・紙テープ.patt">
+        <!-- 3Dモデル読込 -->
+        <a-asset-item id="磁気テープ・紙テープ" src="./3D-model/磁気テープ・紙テープ.glb">
+        </a-asset-item>
+        <!-- 3Dモデル代替画像 -->
+        <a-image src="./3D-image/磁気テープ・紙テープ-img.png"
+          position="-0.9 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 説明文設定 -->
+        <a-image src="./text-image/磁気テープ・紙テープ-txt.png" 
+          position="0.5 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 3Dモデル呼出 -->
+        <a-entity 
+          position="-0.8 0 0"
+          rotation="0 0 0"  
+          scale="5 5 5"
+          class="clickable"
+          gesture-handler
+          gltf-model="#磁気テープ・紙テープ"
+          htmlembed>
+        </a-entity>
+        <!-- 操作方法表示 -->
+        <a-text
+          value="You can pinch in and out."
+          position="-0.9 -5 0"
+          rotation="-90 0 0" 
+          scale="1 1 1"
+          color="red">
+        </a-text>
+      </a-marker>
+
+      <!-- マーカー設定 -->
+      <a-marker type="pattern" url="./pattern/手回し計算器.patt">
+        <!-- 3Dモデル読込 -->
+        <a-asset-item id="手回し計算器" src="./3D-model/手回し計算器.glb">
+        </a-asset-item>
+        <!-- 3Dモデル代替画像 -->
+        <a-image src="./3D-image/手回し計算器-img.png"
+          position="-0.9 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 説明文設定 -->
+        <a-image src="./text-image/手回し計算器-txt.png" 
+          position="0.5 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 3Dモデル呼出 -->
+        <a-entity 
+          position="-0.8 0 0"
+          rotation="0 0 0"  
+          scale="5 5 5"
+          class="clickable"
+          gesture-handler
+          gltf-model="#手回し計算器"
+          htmlembed>
+        </a-entity>
+        <!-- 操作方法表示 -->
+        <a-text
+          value="You can pinch in and out."
+          position="-0.9 -5 0"
+          rotation="-90 0 0" 
+          scale="1 1 1"
+          color="red">
+        </a-text>
+      </a-marker>
+
+      <!-- マーカー設定 -->
+      <a-marker type="pattern" url="./pattern/手回し計算器-タイガー.patt">
+        <!-- 3Dモデル読込 -->
+        <a-asset-item id="手回し計算器-タイガー" src="./3D-model/手回し計算器-タイガー.glb">
+        </a-asset-item>
+        <!-- 説明文設定 -->
+        <a-image src="./text-image/手回し計算器-タイガー-txt.png" 
+          position="0.5 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 3Dモデル呼出 -->
+        <a-entity 
+          position="-0.8 0 0"
+          rotation="0 0 0"  
+          scale="5 5 5"
+          class="clickable"
+          gesture-handler
+          gltf-model="#手回し計算器-タイガー"
+          htmlembed>
+        </a-entity>
+        <!-- 操作方法表示 -->
+        <a-text
+          value="You can pinch in and out."
+          position="-0.9 -5 0"
+          rotation="-90 0 0" 
+          scale="1 1 1"
+          color="red">
+        </a-text>
+      </a-marker>
+
+      <!-- マーカー設定 -->
+      <a-marker type="pattern" url="./pattern/書籍背表紙磁気ストライプ.patt">
+        <!-- 3Dモデル読込 -->
+        <a-asset-item id="書籍背表紙磁気ストライプ" src="./3D-model/書籍背表紙磁気ストライプ.glb">
+        </a-asset-item>
+        <!-- 3Dモデル代替画像 -->
+        <a-image src="./3D-image/書籍背表紙磁気ストライプ-img.png"
+          position="-0.9 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 説明文設定 -->
+        <a-image src="./text-image/書籍背表紙磁気ストライプ-txt.png" 
+          position="0.5 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 3Dモデル呼出 -->
+        <a-entity 
+          position="-0.8 0 0"
+          rotation="0 0 0"  
+          scale="5 5 5"
+          class="clickable"
+          gesture-handler
+          gltf-model="#書籍背表紙磁気ストライプ"
+          htmlembed>
+        </a-entity>
+        <!-- 操作方法表示 -->
+        <a-text
+          value="You can pinch in and out."
+          position="-0.9 -5 0"
+          rotation="-90 0 0" 
+          scale="1 1 1"
+          color="red">
+        </a-text>
+      </a-marker>
+
+      <!-- マーカー設定 -->
+      <a-marker type="pattern" url="./pattern/真空管.patt">
+        <!-- 3Dモデル読込 -->
+        <a-asset-item id="真空管" src="./3D-model/真空管.glb">
+        </a-asset-item>
+        <!-- 3Dモデル代替画像 -->
+        <a-image src="./3D-image/真空管-img.png"
+          position="-0.9 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 説明文設定 -->
+        <a-image src="./text-image/真空管-txt.png" 
+          position="0.5 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 3Dモデル呼出 -->
+        <a-entity 
+          position="-0.8 0 0"
+          rotation="0 0 0"  
+          scale="5 5 5"
+          class="clickable"
+          gesture-handler
+          gltf-model="#真空管"
+          htmlembed>
+        </a-entity>
+        <!-- 操作方法表示 -->
+        <a-text
+          value="You can pinch in and out."
+          position="-0.9 -5 0"
+          rotation="-90 0 0" 
+          scale="1 1 1"
+          color="red">
+        </a-text>
+      </a-marker>
+
+      <!-- マーカー設定 -->
+      <a-marker type="pattern" url="./pattern/竹簡.patt">
+        <!-- 3Dモデル読込 -->
+        <a-asset-item id="竹簡" src="./3D-model/竹簡.glb">
+        </a-asset-item>
+        <!-- 説明文設定 -->
+        <a-image src="./text-image/竹簡-txt.png" 
+          position="0.5 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 3Dモデル呼出 -->
+        <a-entity 
+          position="-0.8 0 0"
+          rotation="0 0 0"  
+          scale="5 5 5"
+          class="clickable"
+          gesture-handler
+          gltf-model="#竹簡"
+          htmlembed>
+        </a-entity>
+        <!-- 操作方法表示 -->
+        <a-text
+          value="You can pinch in and out."
+          position="-0.9 -5 0"
+          rotation="-90 0 0" 
+          scale="1 1 1"
+          color="red">
+        </a-text>
+      </a-marker>
+
+      <!-- マーカー設定 -->
+      <a-marker type="pattern" url="./pattern/中型計算機.patt">
+        <!-- 3Dモデル読込 -->
+        <a-asset-item id="中型計算機" src="./3D-model/中型計算機.glb">
+        </a-asset-item>
+        <!-- 3Dモデル代替画像 -->
+        <a-image src="./3D-image/中型計算機-img.png"
+          position="-0.9 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 説明文設定 -->
+        <a-image src="./text-image/中型計算機-txt.png" 
+          position="0.5 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 3Dモデル呼出 -->
+        <a-entity 
+          position="-0.8 0 0"
+          rotation="0 0 0"  
+          scale="5 5 5"
+          class="clickable"
+          gesture-handler
+          gltf-model="#中型計算機"
+          htmlembed>
+        </a-entity>
+        <!-- 操作方法表示 -->
+        <a-text
+          value="You can pinch in and out."
+          position="-0.9 -5 0"
+          rotation="-90 0 0" 
+          scale="1 1 1"
+          color="red">
+        </a-text>
+      </a-marker>
+
+      <!-- マーカー設定 -->
+      <a-marker type="pattern" url="./pattern/中型計算機HDD.patt">
+        <!-- 3Dモデル読込 -->
+        <a-asset-item id="中型計算機HDD" src="./3D-model/中型計算機HDD.glb">
+        </a-asset-item>
+        <!-- 3Dモデル代替画像 -->
+        <a-image src="./3D-image/中型計算機HDD-img.png"
+          position="-0.9 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 説明文設定 -->
+        <a-image src="./text-image/中型計算機HDD-txt.png" 
+          position="0.5 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 3Dモデル呼出 -->
+        <a-entity 
+          position="-0.8 0 0"
+          rotation="0 0 0"  
+          scale="5 5 5"
+          class="clickable"
+          gesture-handler
+          gltf-model="#中型計算機HDD"
+          htmlembed>
+        </a-entity>
+        <!-- 操作方法表示 -->
+        <a-text
+          value="You can pinch in and out."
+          position="-0.9 -5 0"
+          rotation="-90 0 0" 
+          scale="1 1 1"
+          color="red">
+        </a-text>
+      </a-marker>
+
+      <!-- マーカー設定 -->
+      <a-marker type="pattern" url="./pattern/中国そろばん.patt">
+        <!-- 3Dモデル読込 -->
+        <a-asset-item id="中国そろばん" src="./3D-model/中国そろばん.glb">
+        </a-asset-item>
+        <!-- 説明文設定 -->
+        <a-image src="./text-image/中国そろばん-txt.png" 
+          position="0.5 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 3Dモデル呼出 --><a-entity 
+          position="-0.8 0.5 0"
+          rotation="0 0 0"  
+          scale="5 5 5"
+          class="clickable"
+          gesture-handler
+          gltf-model="#中国そろばん"
+          htmlembed>
+        </a-entity>
+        <!-- 操作方法表示 -->
+        <a-text
+          value="You can pinch in and out."
+          position="-0.9 -5 0"
+          rotation="-90 0 0" 
+          scale="1 1 1"
+          color="red">
+        </a-text>
+      </a-marker>
+
+      <!-- マーカー設定 -->
+      <a-marker type="pattern" url="./pattern/電卓-BISICOM161.patt">
+        <!-- 3Dモデル読込 -->
+        <a-asset-item id="電卓-BISICOM161" src="./3D-model/電卓-BISICOM161.glb">
+        </a-asset-item>
+        <!-- 3Dモデル代替画像 -->
+        <a-image src="./3D-image/電卓-BISICOM161-img.png"
+          position="-0.9 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 説明文設定 -->
+        <a-image src="./text-image/電卓-BISICOM161-txt.png" 
+          position="0.5 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 3Dモデル呼出 -->
+        <a-entity 
+          position="-0.8 0 0"
+          rotation="0 0 0"  
+          scale="5 5 5"
+          class="clickable"
+          gesture-handler
+          gltf-model="#電卓-BISICOM161"
+          htmlembed>
+        </a-entity>
+        <!-- 操作方法表示 -->
+        <a-text
+          value="You can pinch in and out."
+          position="-0.9 -5 0"
+          rotation="-90 0 0" 
+          scale="1 1 1"
+          color="red">
+        </a-text>
+      </a-marker>
+
+      <!-- マーカー設定 -->
+      <a-marker type="pattern" url="./pattern/電卓-HP.patt">
+        <!-- 3Dモデル読込 -->
+        <a-asset-item id="電卓-HP" src="./3D-model/電卓-HP.glb">
+        </a-asset-item>
+        <!-- 説明文設定 -->
+        <a-image src="./text-image/電卓-HP-txt.png" 
+          position="0.5 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 3Dモデル呼出 -->
+        <a-entity 
+          position="-0.8 0 0"
+          rotation="0 0 0"  
+          scale="5 5 5"
+          class="clickable"
+          gesture-handler
+          gltf-model="#電卓-HP"
+          htmlembed>
+        </a-entity>
+        <!-- 操作方法表示 -->
+        <a-text
+          value="You can pinch in and out."
+          position="-0.9 -5 0"
+          rotation="-90 0 0" 
+          scale="1 1 1"
+          color="red">
+        </a-text>
+      </a-marker>
+
+      <!-- マーカー設定 -->
+      <a-marker type="pattern" url="./pattern/電卓-シャープ-サンヨー-カシオ.patt">
+        <!-- 3Dモデル読込 -->
+        <a-asset-item id="電卓-シャープ-サンヨー-カシオ" src="./3D-model/電卓-シャープ-サンヨー-カシオ.glb">
+        </a-asset-item>
+        <!-- 説明文設定 -->
+        <a-image src="./text-image/電卓-シャープ-サンヨー-カシオ-txt.png" 
+          position="0.5 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 3Dモデル呼出 -->
+        <a-entity 
+          position="-0.8 0 0"
+          rotation="0 0 0"  
+          scale="5 5 5"
+          class="clickable"
+          gesture-handler
+          gltf-model="#電卓-シャープ-サンヨー-カシオ"
+          htmlembed>
+        </a-entity>
+        <!-- 操作方法表示 -->
+        <a-text
+          value="You can pinch in and out."
+          position="-0.9 -5 0"
+          rotation="-90 0 0" 
+          scale="1 1 1"
+          color="red">
+        </a-text>
+      </a-marker>
+
+      <!-- マーカー設定 -->
+      <a-marker type="pattern" url="./pattern/電卓-タイガー.patt">
+        <!-- 3Dモデル読込 -->
+        <a-asset-item id="電卓-タイガー" src="./3D-model/電卓-タイガー.glb">
+        </a-asset-item>
+        <!-- 3Dモデル代替画像 -->
+        <a-image src="./3D-image/電卓-タイガー-img.png"
+          position="-0.9 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 説明文設定 -->
+        <a-image src="./text-image/電卓-タイガー-txt.png" 
+          position="0.5 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 3Dモデル呼出 -->
+        <a-entity 
+          position="-0.8 0 0"
+          rotation="0 0 0"  
+          scale="5 5 5"
+          class="clickable"
+          gesture-handler
+          gltf-model="#電卓-タイガー"
+          htmlembed>
+        </a-entity>
+        <!-- 操作方法表示 -->
+        <a-text
+          value="You can pinch in and out."
+          position="-0.9 -5 0"
+          rotation="-90 0 0" 
+          scale="1 1 1"
+          color="red">
+        </a-text>
+      </a-marker>
+
+      <!-- マーカー設定 -->
+      <a-marker type="pattern" url="./pattern/日本そろばん.patt">
+        <!-- 3Dモデル読込 -->
+        <a-asset-item id="日本そろばん" src="./3D-model/日本そろばん.glb">
+        </a-asset-item>
+        <!-- 説明文設定 -->
+        <a-image src="./text-image/日本そろばん-txt.png" 
+          position="0.5 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 3Dモデル呼出 -->
+        <a-entity 
+          position="-0.8 0 0"
+          rotation="0 0 0"  
+          scale="5 5 5"
+          class="clickable"
+          gesture-handler
+          gltf-model="#日本そろばん"
+          htmlembed>
+        </a-entity>
+        <!-- 操作方法表示 -->
+        <a-text
+          value="You can pinch in and out."
+          position="-0.9 -5 0"
+          rotation="-90 0 0" 
+          scale="1 1 1"
+          color="red">
+        </a-text>
+      </a-marker>
+
+      <!-- マーカー設定 -->
+      <a-marker type="pattern" url="./pattern/藁算材料.patt">
+        <!-- 3Dモデル読込 -->
+        <a-asset-item id="藁算材料" src="./3D-model/藁算材料.glb">
+        </a-asset-item>
+        <!-- 説明文設定 -->
+        <a-image src="./text-image/藁算材料-txt.png" 
+          position="0.5 0 0" align="center" rotation="-90 0 0" 
+          color="#e0fdfe"
+          class="clickable"
+          gesture-handler>
+        </a-image>
+        <!-- 3Dモデル呼出 -->
+        <a-entity 
+          position="-0.8 0 0"
+          rotation="0 0 0"  
+          scale="5 5 5"
+          class="clickable"
+          gesture-handler
+          gltf-model="#藁算材料"
+          htmlembed>
+        </a-entity>
+        <!-- 操作方法表示 -->
+        <a-text
+          value="You can pinch in and out."
+          position="-0.9 -5 0"
+          rotation="-90 0 0" 
+          scale="1 1 1"
+          color="red">
+        </a-text>
+      </a-marker>
+
+      <!-- カメラ追加 -->
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+
+</html>

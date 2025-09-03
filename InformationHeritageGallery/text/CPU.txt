@@ -1,0 +1,5 @@
+CPU
+
+CPUはコンピュータの頭脳とも言える中核部分で，演算や処理を司り，プロセッサとも呼ばれる。
+展示はINTELのCPUを主体にして，数多くの種類のCPUを展示している。
+当初はDIP（Dual In-line Package）構造のCPUであったが，展示物のように正方形の本体の底面に金属製の短いピンを配置したPGA（Pin Grid Array）やLCC（Leaded Chip Carrier）の構造と変化していった。
