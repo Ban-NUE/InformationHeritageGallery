@@ -1,0 +1,178 @@
+﻿var museums = [
+	{
+		country : 'England',
+		name : 'Whipple Museum of the History of Science',
+		name2 : 'ウィップル科学史博物館',
+		name3 : '（うぃっぷる かがくし はくぶつかん）',
+		img : 'UK-WhippleMuseum.jpg',
+		dsp : 'ウィップル科学史博物館は，イギリス・ケンブリッジにあるケンブリッジ大学の歴史・哲学学科が運営する博物館です。主として，天文観測や計算に関わる展示を行っています。建物の2階に上がった博物館の面積は世界の有名な博物館に比較してそれほど広くはないですが，差分方程式の専用機械である階差機関やコンピュータの機能を持つ解析機関を構想したことで知られる1800年代に活躍したチャールズ・バベッジがケンブリッジ大学数学科教授であったことから，解析機関の一部である歯車の現物も展示されています。他にも天体観測用の機器やそろばん・ネイピア棒等の計算用機器も展示されています。',
+		link : 'https://www.whipplemuseum.cam.ac.uk/',
+		link2 : 'https://www.google.co.jp/maps/place/%E3%82%A6%E3%82%A3%E3%83%83%E3%83%97%E3%83%AB%E7%A7%91%E5%AD%A6%E5%8F%B2%E5%8D%9A%E7%89%A9%E9%A4%A8/@52.2027292,0.1191655,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipP4TXtJ5newXb3izhXSNNtZpQsk2u44b0awj3wR!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipP4TXtJ5newXb3izhXSNNtZpQsk2u44b0awj3wR%3Dw86-h114-k-no!7i3024!8i4032!4m7!3m6!1s0x47d8717c774a5791:0x6e5b8ac04784cb6d!8m2!3d52.202753!4d0.1193564!10e5!16zL20vMDg1aDFx?hl=ja&entry=ttu',
+		latlon : [52.20273503375, 0.119272715487588]
+	},
+	{
+		country : 'England',
+		name : 'History of Science Museum',
+		name2 : 'オックスフォード科学史博物館',
+		name3 : '（おっくすふぉーど かがくし はくぶつかん）',
+		img : 'UK-HistoryOfScienceMuseum.jpg',
+		dsp : 'オックスフォード科学史博物館は，イギリスのオックスフォード大学にある博物館の一つです。主として科学史を扱っていて，展示物は，天体観測用の機器であるアストロラーベや四分儀，時間を測る日時計等の天文機器が多いですが，ネイピア棒，Curta等の機械式計算器，計算尺，そろばん，電卓等の情報に関わる機器も展示されています。',
+		link : 'https://www.hsm.ox.ac.uk/',
+		link2 : 'https://www.google.co.jp/maps/place/%E3%82%AA%E3%83%83%E3%82%AF%E3%82%B9%E3%83%95%E3%82%A9%E3%83%BC%E3%83%89%E7%A7%91%E5%AD%A6%E5%8F%B2%E5%8D%9A%E7%89%A9%E9%A4%A8/@51.7544345,-1.2556437,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipOAawtXDxMdkMU4iZsEyUv27ED6ACqAy3pcow7i!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOAawtXDxMdkMU4iZsEyUv27ED6ACqAy3pcow7i%3Dw128-h86-k-no!7i5223!8i3486!4m7!3m6!1s0x4876c6aedfd48391:0xb17b512bad084e20!8m2!3d51.7542879!4d-1.2554139!10e5!16zL20vMDZwZHYx?hl=ja&entry=ttu',
+		latlon : [51.7542954423037, -1.25545224242115]
+	},
+	{
+		country : 'Germany',
+		name : 'HNF Heinz Nixdorf MuseumsForum',
+		name2 : 'ハインツ・ニクスドルフ・ミュージアム・フォーラム',
+		name3 : '',
+		img : 'DE-HeinzNixdorfMuseumsForum.jpg',
+		dsp : 'ハインツ・ニクスドルフ・ミュージアム・フォーラムは，ドイツ・ベルリンから西へ約400kmに位置するドイツ・パーダーボルンにある博物館です。略語としてHNFが用いられ，名前の由来はコンピュータ技術者のHeinz Nixdorfに因んでいます。床面積は約6000㎡を超え，紀元前からの文字の歴史や情報やコンピュータの歴史を幅広く扱っている世界有数の情報関連博物館です。メソポタミア文明での文字，計算の記録，骨への数値の記録，インド数字，アラビア数字，現在の数字表記の変遷，印刷の歴史，タイプライタ，キープ，表形式アバカスから線そろばんさらには現在のそろばんに至る流れ，中国や日本の算盤（さんばん），ネイピア棒，各種の手回し計算器，階差機関，解析機関，暗号機，コンピュータ，ロボットの変遷等，非常に幅広い内容の展示を行っています。',
+		link : 'https://www.hnf.de/home.html',
+		link2 : 'https://www.google.co.jp/maps/place/Heinz+Nixdorf+MuseumsForum/@51.7315614,8.7358751,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipOsSPTXOjvUjXk_6z44mm9PmRU2YxhGQCSLuzmc!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOsSPTXOjvUjXk_6z44mm9PmRU2YxhGQCSLuzmc%3Dw129-h86-k-no!7i1920!8i1280!4m7!3m6!1s0x47ba4b7db1359147:0x75496d53d80a2d58!8m2!3d51.7314381!4d8.7357808!10e5!16s%2Fg%2F1212gj46?hl=ja&entry=ttu',
+		latlon : [51.73145578434, 8.73578629076805]
+	},
+	{
+		country : 'Germany',
+		name : 'Arithmeum',
+		name2 : 'ボン大学計算機博物館（アリスメウム）',
+		name3 : '（ぼんだいがく けいさんき はくぶつかん）',
+		img : 'DE-Arithmeum.jpg',
+		dsp : 'ボン大学計算機博物館は，正式名がArithmeum（アリスメウム）のドイツ・ボンにある博物館です。ボン大学数学科が運営していて，計算に関わる展示を主体とした博物館になっています。数字の表記，文字の発達，古代のそろばん，キープ，藁算，計算専用コイン，そろばん，ネイピア棒，シッカートの計算機，計算尺，天体観測器具，手回し計算器，階差機関，解析機関，ENIGMA，コアメモリ，ICウェーハ，CPU変遷，CG事例等が展示されています。ネイピア棒と手回し計算器のコレクションは世界にも類を見ない数の展示になっています。',
+		link : 'https://www.arithmeum.uni-bonn.de/en/arithmeum/greeting.html',
+		link2 : 'https://www.google.co.jp/maps/place/%E3%83%9C%E3%83%B3%E5%A4%A7%E5%AD%A6%E8%A8%88%E7%AE%97%E6%A9%9F%E5%8D%9A%E7%89%A9%E9%A4%A8/@50.7306143,7.1048943,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipOUrK8aXee15pHma_S4qOY9XTjMMuI-XWnpyfeu!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOUrK8aXee15pHma_S4qOY9XTjMMuI-XWnpyfeu%3Dw152-h86-k-no!7i4032!8i2268!4m7!3m6!1s0x47bee175a9fcb5cd:0x7c4a91442f4cc4bf!8m2!3d50.7308425!4d7.1046931!10e5!16s%2Fm%2F04n351m?hl=ja&entry=ttu',
+		latlon : [50.7307778414157, 7.1047848702354]
+	},
+	{
+		country : 'People\'s Republic of China',
+		name : '喬家大院',
+		name2 : '（きょうか たいいん）',
+		name3 : '',
+		img : 'CN-喬家大院.jpg',
+		dsp : '喬家大院は，中華人民共和国の山西省晋中市祁県喬家堡村にある歴史的建造物で，中庭を有する商家の大邸宅です。18世紀の建築物であり，当時の中国経済を発展させた晋商（山西商人）である喬家の屋敷でした。現在は住居としては使用されておらず，博物館になっています。',
+		link : 'https://ja.wikipedia.org/wiki/%E5%96%AC%E5%AE%B6%E5%A4%A7%E9%99%A2',
+		link2 : 'https://www.google.co.jp/maps/place/%E5%96%AC%E5%AE%B6%E5%A4%A7%E9%99%A2/@37.407076,112.433645,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipMKRtrtgjcQjERaKIg27EhYT9FESxwLv1xuMOUH!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipMKRtrtgjcQjERaKIg27EhYT9FESxwLv1xuMOUH%3Dw86-h114-k-no!7i3024!8i4032!4m7!3m6!1s0x36756629227beb81:0xa89d43c810788340!8m2!3d37.407076!4d112.433645!10e5!16s%2Fm%2F03c6_4t?hl=ja&entry=ttu',
+		latlon : [37.40752155238, 112.433568433777]
+	},
+	{
+		country : 'People\'s Republic of China',
+		name : '普商渠家大院',
+		name2 : '（しんしょう きょか たいいん）',
+		name3 : '',
+		img : 'CN-RyokaMuseum.jpg',
+		dsp : '普商渠家大院は，中華人民共和国の山西省晋中市祁県にあり，歴史的に経済が反映した場所の祁県の大商家の家を博物館にしています。博物館の中には竹簡を束ねた書，中国古銭の銀餅や銀貨と天秤，手形や証文等が展示されていて，商家を印象付ける展示になっています。金銭の計算も必要であり，通常の大きさの上2珠，下5珠の28桁の中国そろばん，近代のレジスター，38桁の中国そろばん，約60桁ある大きな中国そろばん等も展示していて，中国経済を活性化させた歴史が創造できます。',
+		link : 'https://baike.baidu.com/item/%E6%B8%A0%E5%AE%B6%E5%A4%A7%E9%99%A2',
+		link2 : 'https://www.google.co.jp/maps/place/%E4%BD%A2%E5%AE%B6%E5%A4%A7%E9%99%A2/@37.357185,112.327303,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipPE86sbv3tbWrRtmyfuHM6c_JjrhBVR7crOBnGB!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPE86sbv3tbWrRtmyfuHM6c_JjrhBVR7crOBnGB%3Dw86-h114-k-no!7i960!8i1280!4m7!3m6!1s0x36756c2c7c748925:0x7b43a1efcba5ba71!8m2!3d37.357185!4d112.327303!10e5!16s%2Fg%2F11b419sy4?hl=ja&entry=ttu',
+		latlon : [37.3570351134798, 112.321027021694]
+	},
+	{
+		country : 'People\'s Republic of China',
+		name : '中国珠算博物館',
+		name2 : '（ちゅうごく しゅざん はくぶつかん）',
+		name3 : '',
+		img : 'CN-ChinaAbacusesMuseum.jpg',
+		dsp : '中国珠算博物館は，中華人民共和国の江蘇省南通市にあるそろばんに特化した世界有数の博物館で，様々なそろばんを展示しています。掲示物には計数の歴史も説明されていて，手指での計数，線そろばん，キープ，刻み記録等の外国の歴史を簡単に紹介し，中国の計算の歴史をそろばんと関連させて電卓・コンピュータを含みながら詳細に説明しています。計算用，置物用等の様々なそろばんを展示していますが，中でも圧巻は横7.809m，高さ1.81mで1珠が約30kgの25桁の上2珠・下5珠のそろばんで，世界一大きなそろばんとして博物館講堂の壇上に鎮座しています。',
+		link : 'https://baike.baidu.com/item/%E5%8D%97%E9%80%9A%E4%B8%AD%E5%9B%BD%E7%8F%A0%E7%AE%97%E5%8D%9A%E7%89%A9%E9%A6%86/23655844?fromtitle=%E4%B8%AD%E5%9B%BD%E7%8F%A0%E7%AE%97%E5%8D%9A%E7%89%A9%E9%A6%86&fromid=6807202',
+		link2 : 'https://www.google.co.jp/maps/place/%E4%B8%AD%E5%9B%BD%E7%8F%A0%E7%AE%97%E5%8D%9A%E7%89%A9%E9%A4%A8/@32.023363,120.857978,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipODnfOIi2sdl2TDYUeUzJlpZZ0Q1mvbs29tU7eN!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipODnfOIi2sdl2TDYUeUzJlpZZ0Q1mvbs29tU7eN%3Dw114-h86-k-no!7i3264!8i2448!4m11!1m2!2m1!1z5Lit5Zu954-g566X5Y2a54mp6aSo!3m7!1s0x35b17831a926530f:0xf3aa52ae7f355b0a!8m2!3d32.023363!4d120.857978!10e5!15sChXkuK3lm73nj6DnrpfljZrnianppKiSAQphcnRfbXVzZXVt4AEA!16s%2Fg%2F128dgvbbk?hl=ja&entry=ttu',
+		latlon : [32.0264471732839, 120.854553549002]
+	},
+	{
+		country : 'People\'s Republic of China',
+		name : '上海博物館',
+		name2 : '（しゃんはい はくぶつかん）',
+		name3 : '',
+		img : 'CN-ShanghaiMuseum.jpg',
+		dsp : '上海博物館は，中華人民共和国の上海市黄浦区に位置する博物館です。北京の故宮博物館，南京博物館とともに中国三大博物館の一つになっています。館内には壮大な展示品があり，数多くの翡翠彫刻，中国古銭，印，皿，壺，香炉，枕，仏像等が展示されています。その中の一つに翡翠で作った石のそろばんを展示しているのが印象的です。',
+		link : 'https://www.shanghaimuseum.net/mu/frontend/pg/index',
+		link2 : 'https://www.google.co.jp/maps/place/%E4%B8%8A%E6%B5%B7%E5%8D%9A%E7%89%A9%E9%A4%A8/@31.2283307,121.4755278,3a,76.4y,90t/data=!3m8!1e2!3m6!1shttp:%2F%2Ft0.gstatic.com%2Fimages%3Fq%3Dtbn:ANd9GcTuHeaM9vL3XU79or6uu4_itAn1oFTRnFlxUA6Gj64CXThra8p7!2e7!3e27!6shttps:%2F%2Flh3.googleusercontent.com%2Fgps-proxy%2FAMy85WLBWnnYtAyEG28VZYsBULnZeUAuPFxbBiJus6NAMbeYoi2U4L042eJ7W20Joi4iPAS4dJ-Hw2Agl84-4UW7jqWBFh4-Vrn__FNN1DSwCq042bjp5s-5mpwmZiRL0DKGTdEpA-zN3gTt0dyeqdPaGxWQ5GgnvUrK1iKv9VfkRsABI2enkEA9DTw%3Dw129-h86-k-no!7i1080!8i720!4m7!3m6!1s0x35b270696d12653d:0x4d4c4e7bc3c8db6c!8m2!3d31.2283307!4d121.4755278!10e5!16zL20vMDI1cW5y?hl=ja&entry=ttu',
+		latlon : [31.2302905604465, 121.470941477833]
+	},
+	{
+		country : 'People\'s Republic of China',
+		name : '程大位珠算博物館',
+		name2 : '（ていたいい しゅざん はくぶつかん）',
+		name3 : '',
+		img : 'CN-TeiDaiiAbacusMuseum.jpg',
+		dsp : '程大位珠算博物館は，中華人民共和国の安徽省黄山市にあるそろばんに関する代表的な博物館です。中国そろばんとして上2珠，下5珠の算盤は常識ですが，上1珠・下2珠のそろばん，上2珠・中5珠・下3珠の上下3段のそろばん，上1珠・中上4珠・中下1珠・下4珠の上下4段のそろばん，上1珠・中上4珠・中下1珠・下5珠の上下4段のそろばん，上2珠・中上3珠・中下2珠・下3珠の上下4段のそろばん，上3珠・下4珠のそろばん，枠は一つで10珠や9珠のそろばん，日本式の上1珠，下4珠のそろばん等があります。翡翠のそろばんや携帯用の小型そろばんも何種類か展示していて，珠が球状のそろばんや穴に珠を入れるそろばんもあります。特に注目すべきことは沖縄の藁算を3種類展示していることで，日本と中国が早くから交流していたことが分かります。',
+		link : 'https://baike.baidu.com/item/%E7%A8%8B%E5%A4%A7%E4%BD%8D%E7%8F%A0%E7%AE%97%E5%8D%9A%E7%89%A9%E9%A6%86',
+		link2 : 'https://www.google.co.jp/maps/place/%E7%A8%8B%E5%A4%A7%E4%BD%8D%E7%8F%A0%E7%AE%97%E5%8D%9A%E7%89%A9%E9%A4%A8/@29.7113024,118.328832,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipPP6PxeD-a5BoPdFihZ-WsrPjXseaKwrXt0IoRH!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPP6PxeD-a5BoPdFihZ-WsrPjXseaKwrXt0IoRH%3Dw114-h86-k-no!7i2048!8i1536!4m7!3m6!1s0x34360ce5ff8bcdad:0x88363c534ecc7679!8m2!3d29.711359!4d118.328808!10e5!16s%2Fg%2F1tm0qvqt?hl=ja&entry=ttu',
+		latlon : [29.7137936779876, 118.323383003354]
+	},
+	{
+		country : 'Taiwan',
+		name : '台湾府城隍廟',
+		name2 : '（たいわんふ じょうこうびょう）',
+		name3 : '',
+		img : 'TW-台湾府城隍廟.jpg',
+		dsp : '台湾府城隍廟は，中華民国（台湾）の台南市中西区にある国立博物館です。土地の守護神である道教の城隍神を祭祀するための廟所である城隍廟として300年以上の歴史があり有名です。上2珠・下5珠で15桁の幅2m以上の大きな中国そろばんが入口の上部に掲げられていて，城隍爺がそろばんを弾いて死者の生前の善悪を計算すると言われています。内部の一部は展示室になっていて，幾つかのそろばんが展示されています。その中で，高さ約1.5m，幅約3mで21桁の大きなそろばんも展示されています。',
+		link : 'https://www.twcitygod.org.tw/',
+		link2 : 'https://www.google.co.jp/maps/place/%E5%8F%B0%E6%B9%BE%E5%BA%9C%E5%9F%8E%E9%9A%8D%E5%BB%9F/@22.9920085,120.2090638,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipM3cbCoNlS52rMMNIVbyzXH2BeT8mCQem-Up1P9!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipM3cbCoNlS52rMMNIVbyzXH2BeT8mCQem-Up1P9%3Dw152-h86-k-no!7i4032!8i2268!4m7!3m6!1s0x346e7688e3d68b7b:0x3c85f45f3f0e7a02!8m2!3d22.9920085!4d120.2090638!10e5!16s%2Fg%2F121_tvs4?hl=ja&entry=ttu',
+		latlon : [22.9920267213562, 120.209105710376]
+	},
+	{
+		country : 'Japan',
+		name : '東京理科大学なるほど科学体験館',
+		name2 : '（とうきょうりかだい なるほど かがくはくぶつかん）',
+		name3 : '',
+		img : 'JP-東京理科大学.jpg',
+		dsp : '東京理科大学なるほど科学体験館は，千葉県野田市の東京理科大学野田キャンパスにある計算機器を主体とした博物館です。元々は近代科学資料館として神楽坂キャンパスにありましたが，数学体験館となるほど科学体験館に分かれて現在に至っています。館内には，ローマ時代の溝そろばん，雲州そろばん，播州そろばん，上下2段そろばん，真珠そろばん，ロールそろばん，真珠そろばん，電卓付そろばん，盲人そろばん，翡翠そろばん，小型そろばん等の各種そろばん，計算尺，円形計算尺，渦巻円盤式計算尺，藁算，算木・算盤等の計算専用機があり，さらにクルタ計算機，ポケット型加減算機，手回し計算器，電卓，真空管，パラメトロン素子，トランジスタ，Appleコンピュータ，ラップトップコンピュータ，ファミコン，微分解析機，UNIVAC，FACOM汎用コンピュータ，京コンピュータCPUボード等のコンピュータ関連展示物があり，他にも多数の収蔵品があります。日本における情報関連博物館としては，国立科学博物館と同様に代表的な博物館になっています。',
+		link : 'https://www.tus.ac.jp/info/setubi/naruhodo/index.html',
+		link2 : 'https://www.google.co.jp/maps/place/%E3%81%AA%E3%82%8B%E3%81%BB%E3%81%A9%E7%A7%91%E5%AD%A6%E4%BD%93%E9%A8%93%E9%A4%A8/@35.9175758,139.9057404,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipOb96u6ZfnD5OoJSXaTA5TYBuzygZRK_uFXSSwi!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOb96u6ZfnD5OoJSXaTA5TYBuzygZRK_uFXSSwi%3Dw114-h86-k-no!7i4032!8i3024!4m11!1m2!2m1!1z5p2x5Lqs55CG56eR5aSn5a2m44Gq44KL44G744Gp56eR5a2m5L2T6aiT6aSo!3m7!1s0x601899b0b2ad9a89:0x9d3c168172955a6f!8m2!3d35.9175758!4d139.9057404!10e5!15sCi3mnbHkuqznkIbnp5HlpKflrabjgarjgovjgbvjgannp5HlrabkvZPpqJPppKiSAQZtdXNldW3gAQA!16s%2Fg%2F11hz137jtn?hl=ja&entry=ttu',
+		latlon : [35.9176518392286, 139.905755167925]
+	},
+	{
+		country : 'Japan',
+		name : '白井そろばん博物館',
+		name2 : '（しらい そろばん はくぶつかん）',
+		name3 : '',
+		img : 'JP-白井そろばん博物館.jpg',
+		dsp : '白井そろばん博物館は，千葉県白井市にあるそろばんを集めた博物館です。地域の活性化とともに世界に向けてそろばんについての情報発信を行っています。館内には，200桁以上あるそろばん，長尺そろばん，上2珠・下5珠の中国そろばん，上2珠・下5珠が向かい合わせになっている大型中国そろばん，上1珠・下4珠の日本そろばん，上1珠・下4珠が上下2組になっている日本そろばん，翡翠そろばん，真珠そろばん，陶器で作った反物そろばん，焼き物そろばん，盲人そろばん，ロールそろばん，そろばんを収納する専用箱，ロシアそろばん，10珠横並びのブルガリアそろばん，8珠そろばん，上3珠・下10珠のそろばん，円盤形や円筒形のそろばんの珠で作った置物，そろばんと組み合わせた置時計，そろばんを持った七福神，現在の高級そろばん等のそろばんが多数あり，また算木や和算に関する江戸時代等の多くの書籍も展示されています。',
+		link : 'http://soroban-muse.com/',
+		link2 : 'https://www.google.co.jp/maps/place/%E7%99%BD%E4%BA%95%E3%81%9D%E3%82%8D%E3%81%B0%E3%82%93%E5%8D%9A%E7%89%A9%E9%A4%A8/@35.7981189,140.0634132,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipNwkDNwn7OomrH9BPD8Os7sxtO-Pzf_8dDdHxzY!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNwkDNwn7OomrH9BPD8Os7sxtO-Pzf_8dDdHxzY%3Dw86-h86-k-no!7i1869!8i1869!4m7!3m6!1s0x60227ed6e69a59c9:0x3aeec1de4585183b!8m2!3d35.7981189!4d140.0634132!10e5!16s%2Fg%2F1vd760hq?hl=ja&entry=ttu',
+		latlon : [35.7981273305679, 140.06338234249]
+	},
+	{
+		country : 'Japan',
+		name : '国立科学博物館',
+		name2 : '（こくりつ かがく はくぶつかん）',
+		name3 : '',
+		img : 'JP-Kahaku.jpg',
+		dsp : '国立科学博物館は，東京都台東区上野公園にある1877年に設立された日本で最も歴史のある国立の総合科学博物館です。自然史に関する科学その他の自然科学及びその応用に関する調査及び研究ならびにこれらに関する資料の収集・保管・公衆への供覧等を行うことにより自然科学及び社会教育の振興を図ることを目的としていて，自然史および科学技術史研究等に関わる400万点を超える貴重なコレクションを所蔵しています。上野本館，筑波実験植物園，附属自然教育園があり，科学技術に関しては上野本館に主に展示しています。館内には，恐竜を含む動物の剥製・模型，魚類の標本，植物標本，鉱石標本，古代の丸木舟，古代の帆船，船舶模型，時計，蒸気機関車，エジソンダイナモ，交流発電機，天体観測機器，しんかい6500等の潜水艇，飛行機，航空機ジェットエンジン，ロケット，ロケットエンジン，人工衛星，コンピュータ等が展示されています。',
+		link : 'https://www.kahaku.go.jp/',
+		link2 : 'https://www.google.co.jp/maps/place/%E5%9B%BD%E7%AB%8B%E7%A7%91%E5%AD%A6%E5%8D%9A%E7%89%A9%E9%A4%A8/@35.7163786,139.7765769,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipPuEGtvnMb-6YQ8U4AItb2TnwIXm3KWPfvugNZC!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPuEGtvnMb-6YQ8U4AItb2TnwIXm3KWPfvugNZC%3Dw129-h86-k-no!7i4898!8i3265!4m11!1m2!2m1!1z5Zu956uL56eR5a2m5Y2a54mp6aSo!3m7!1s0x60188e9ceba15bf1:0x89884580e40b3eca!8m2!3d35.7163059!4d139.7765252!10e5!15sChXlm73nq4vnp5HlrabljZrnianppKgiA4gBAVoZIhflm73nq4sg56eR5a2mIOWNmueJqemkqJIBDnNjaWVuY2VfbXVzZXVt4AEA!16zL20vMDd2M3Zk?hl=ja&entry=ttu',
+		latlon : [35.7163913324285, 139.776451879322]
+	},
+	{
+		country : 'Japan',
+		name : '小野市伝統産業会館',
+		name2 : '（おのし でんとう さんぎょうかいかん）',
+		name3 : '',
+		img : 'JP-小野市伝統産業会館.jpg',
+		dsp : '小野市伝統産業会館は，兵庫県小野市にあるそろばん博物館です。小野市では長い間そろばんが作られていて，小野市の播州そろばんは1976年に通産省の伝統的工芸品に指定されています。古くから大阪・京都は商売人が多く集まり大津は東へ移動する際の経路になっていて大津そろばんが用いられていました。播州そろばんは以前大津でそろばんを作っていた職人たちが移住して盛んになったと言われています。館内には，上1珠・下4珠の現在のそろばんに加えて，上1珠・下4珠のそろばんが向かい合わせに組み合わされたそろばん，上2珠・下5珠のそろばんと上1珠・下4珠のそろばんが上下に組み合わされたそろばん，上1珠・下4珠のそろばんが左右に向かい合わせに組み合わされたそろばん，上1珠・中4珠・下1珠のどちら側からでも使えるそろばん，上3珠・下10珠のそろばん，上2珠・下5珠の中国そろばん，中折れそろばん，ガラス珠そろばん，孫の手そろばん，横10珠のそろばん，東海道五十三次の宿場の名前を記したそろばん，弓型そろばん，円形そろばん，電卓と組み合わされたそろばん，タイガー手回し計算器，鉋等の道具，そろばんで作ったお城等が展示されています。',
+		link : 'http://densan.onocci.or.jp/',
+		link2 : 'https://www.google.co.jp/maps/place/%E5%B0%8F%E9%87%8E%E5%B8%82%E4%BC%9D%E7%B5%B1%E7%94%A3%E6%A5%AD%E4%BC%9A%E9%A4%A8/@34.8526078,134.9321554,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipO_zuRiAD1u-GNkXKWp6zpkwGz4jmLEZhJ9ZA3L!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipO_zuRiAD1u-GNkXKWp6zpkwGz4jmLEZhJ9ZA3L%3Dw114-h86-k-no!7i2048!8i1536!4m7!3m6!1s0x35552ddc4d3ca9f9:0xed82a63d5ebd9a4!8m2!3d34.8525662!4d134.9321569!10e5!16s%2Fg%2F121rvp_l?hl=ja&entry=ttu',
+		latlon : [34.8526628844486, 134.932293896747]
+	},
+	{
+		country : 'Japan',
+		name : '雲州そろばん伝統産業会館',
+		name2 : '（うんしゅう そろばん でんとうさんぎょうかいかん）',
+		name3 : '',
+		img : 'JP-雲州算盤協業組合.jpg',
+		dsp : '雲州そろばん伝統産業会館は，島根県仁多郡奥出雲町横田にある雲州算盤協業組合のそろばん博物館で，数多くのそろばんを展示しています。また，島根県仁多郡奥出雲町下横田にある雲州そろばん協業組合はそろばんの普及啓発に努めています。島根県奥出雲町では江戸時代から質の高い雲州そろばんが作られていて，国の伝統的工芸品指定になっています。そろばんの製作には，珠づくり，軸づくり，枠づくり，組み立て・仕上げの工程があり，特に乾燥させるために製作期間が長く，大変な労力を伴っています。雲州算盤協業組合にあるそろばんの展示には，ローマそろばんの復元，ロシアそろばん，上2珠・下5珠の中国そろばん，上1珠・下4珠が向かい合っているそろばん，上2珠・下5珠で81桁あるそろばん，4.23mで309桁ある上1珠・下4珠のそろばんや鉋等の道具も展示されています。隣の建物の道路沿いの壁には大きなそろばんが埋め込まれていることも特徴的です。',
+		link : 'https://unsyusoroban.com/',
+		link2 : 'https://www.google.co.jp/maps/place/%E9%9B%B2%E5%B7%9E%E7%AE%97%E7%9B%A4%E5%8D%94%E5%90%8C%E7%B5%84%E5%90%88/@35.177676,133.0928941,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipOvdE6YptRva75Uk0WA63UZEv-dOmDKON99hL_A!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOvdE6YptRva75Uk0WA63UZEv-dOmDKON99hL_A%3Dw152-h86-k-no!7i4656!8i2620!4m11!1m2!2m1!1z6Zuy5bee44Gd44KN44Gw44KT5Lyd57Wx55Sj5qWt5Lya6aSo!3m7!1s0x3557242bf2eaadab:0x88057e0a685b855b!8m2!3d35.177483!4d133.092839!10e5!15sCiTpm7Llt57jgZ3jgo3jgbDjgpPkvJ3ntbHnlKPmpa3kvJrppKhaKyIp6ZuyIOW3niDjgZ3jgo3jgbDjgpMg5Lyd57WxIOeUo-alrSDkvJrppKiSARF0ZWNobm9sb2d5X211c2V1bZoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VOMWVrbDVZbk5CUlJBQuABAA!16s%2Fg%2F1tlvmcpk?hl=ja&entry=ttu',
+		latlon : [35.1776007528941, 133.092753151971]
+	},
+	{
+		country : 'Japan',
+		name : '鳴門教育大学情報遺産ギャラリー',
+		name2 : '（なるときょういくだいがく じょうほういさん ぎゃらりー）',
+		name3 : '',
+		img : 'JP-NarutoUniv.jpg',
+		dsp : '鳴門教育大学は，徳島県鳴門市鳴門町に位置する教員養成系の国立大学で，大学院から先に設置され，次に学部，さらに博士課程の順に設置された新しい構想の教育大学です。教員養成系大学としては早くから高等学校情報免許の科目を開設しており，幅広い専攻の学生が情報免許を取得しています。情報に関わる教養を身に付けるために大学内の情報基盤センターに情報遺産ギャラリーを設置しており，長年個人的に収集してきた竹簡，ユパナ，パピルス，ローマ時代の溝そろばん復元物，ネイピア棒復元物，大型上2桁・下5桁の中国そろばん，携帯用中国そろばん，翡翠中国そろばん，上1桁・下5桁の日本そろばん，上1桁・下4桁の日本そろばん，算盤玩具，磁気テープ，磁気メディア，計算尺，電卓，ミニコン用HDD，中型コンピュータ磁気ディスク装置，各種の手回し計算器，電気式計算機，各種の電卓，各種のワークステーション，PC-9801，Macintosh，各種パーソナルコンピュータ，マザーボード，HDD等を展示しています。',
+		link : 'https://www.naruto-u.ac.jp/facultystaff/kikuchi/InformationHeritageGallery/Gallery.html',
+		link2 : 'https://www.naruto-u.ac.jp/facultystaff/kikuchi/InformationHeritageGallery/search-contents.html',
+		latlon : [34.2028210996042, 134.606654179131]
+	},
+];

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="../css/comhis.css" type="text/css" rel="stylesheet"/>
+	<script src="../js/museums-IC.js"></script>
+	<title>情報遺産博物館世界地図（IC関連） </title>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+	<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+</head>
+
+<body>
+
+<!-- Site navigation menu -->
+
+<select id="category" onChange="location.href=value;" style="font-size:0.8vw;">
+	<optgroup label="情報遺産内容">
+		<option value="InformationHistory-All.html">全ての博物館</option>
+		<option value="InformationHistory-THist.html">情報史全体</option>
+		<option value="InformationHistory-CN.html">数・文字・数字</option>
+		<option value="InformationHistory-GAbacus.html">そろばん</option>
+		<option value="InformationHistory-Cal.html">計算具</option>
+		<option value="InformationHistory-Mech.html">機械式計算器</option>
+		<option value="InformationHistory-IC.html" selected>IC関連</option>
+		<option value="InformationHistory-Com.html">コンピュータ</option>
+		<option value="InformationHistory-SC.html">スーパーコンピュータ</option>
+	</optgroup>
+	<optgroup label="学校種">
+		<option value="InformationHistory-ElS.html">小学校対応</option>
+		<option value="InformationHistory-JHS.html">中学校対応</option>
+		<option value="InformationHistory-SHS.html">高等学校対応</option>
+		<option value="InformationHistory-Unv.html">大学対応</option>
+		<option value="InformationHistory-LLL.html">社会人対応</option>
+	</optgroup>
+	<optgroup label="教科利用">
+		<option value="InformationHistory-S-Lang.html">国語・外国語</option>
+		<option value="InformationHistory-S-Soc.html">社会</option>
+		<option value="InformationHistory-S-Math.html">算数・数学</option>
+		<option value="InformationHistory-S-Sci.html">理科</option>
+		<option value="InformationHistory-S-LH.html">生活・総合</option>
+		<option value="InformationHistory-S-Mus.html">音楽</option>
+		<option value="InformationHistory-S-Arts.html">図工・美術</option>
+		<option value="InformationHistory-S-TI.html">技術・情報</option>
+		<option value="InformationHistory-S-Home.html">家庭</option>
+		<option value="InformationHistory-S-Sport.html">体育・保健</option>
+		<option value="InformationHistory-S-Moral.html">道徳</option>
+	</optgroup>
+	<optgroup label="展示内容">
+		<option value="InformationHistory-PreH.html">先史時代</option>
+		<option value="InformationHistory-Bone.html">骨への刻み</option>
+		<option value="InformationHistory-Rosetta.html">ロゼッタストーン</option>
+		<option value="InformationHistory-Maya.html">マヤ文明</option>
+		<option value="InformationHistory-Aztec.html">アステカの暦石</option>
+		<option value="InformationHistory-Straw.html">藁算</option>
+		<option value="InformationHistory-Inca.html">インカ文明</option>
+		<option value="InformationHistory-Salamis.html">サラミスのアバカス</option>
+		<option value="InformationHistory-Darius.html">ダリウスの壺</option>
+		<option value="InformationHistory-Jeton.html">ジェトン</option>
+		<option value="InformationHistory-LineAbacus.html">溝そろばん</option>
+		<option value="InformationHistory-Abacus.html">中国日本そろばん</option>
+		<option value="InformationHistory-Naiper.html">ネイピア棒</option>
+		<option value="InformationHistory-EuroMech.html">西洋機械式計算器</option>
+		<option value="InformationHistory-Yazu.html">自働算盤</option>
+		<option value="InformationHistory-Tiger.html">タイガー計算器</option>
+		<option value="InformationHistory-Analitic.html">階差機関解析機関</option>
+		<option value="InformationHistory-Diff.html">微分解析機</option>
+		<option value="InformationHistory-Z3.html">電気計算機Z3</option>
+		<option value="InformationHistory-ENIGMA.html">ENIGMA</option>
+		<option value="InformationHistory-Colossus.html">Colossus</option>
+		<option value="InformationHistory-Harvard.html">HarvardMarkI</option>
+		<option value="InformationHistory-ENIAC.html">ENIAC</option>
+		<option value="InformationHistory-EDSAC.html">EDSAC</option>
+		<option value="InformationHistory-EDVAC.html">EDVAC</option>
+		<option value="InformationHistory-UNIVAC.html">UNIVAC</option>
+		<option value="InformationHistory-Cray1.html">Cray1</option>
+		<option value="InformationHistory-EarthSimul.html">地球シミュレータ</option>
+		<option value="InformationHistory-KeiFugaku.html">京・富岳コンピュータ</option>
+		<option value="InformationHistory-AppleI.html">AppleI</option>
+		<option value="InformationHistory-IBMPC.html">IBMPC</option>
+	</optgroup>
+	<optgroup label="概要説明">
+		<option value="InformationHistory-Explain.html">概要説明</option>
+	</optgroup>
+</select>
+
+<div id="wrapper" style="width: 78vw; height: 77vh; margin: 0 auto;">
+	<div id="header" style="width: 100%; height: 4vh;"><center><b>情報遺産博物館世界地図（IC関連）</b></center></div>
+
+<div id="map" style="width: 100%; height: 96%;"></div>
+
+<script>
+	const map = L.map('map').setView([20.000, 0.09], 2);
+	const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', 	{
+		maxZoom: 20, minZoom: 1.5,
+		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+	}).addTo(map);
+	// Loop through the museums and add markers to the map
+	museums.forEach(function(museum) {
+  var marker = L.marker(museum.latlon, { title: museum.name }).addTo(map);
+
+  function escapeHtml(str) {
+    return str.replace(/&/g, '&amp;')
+      .replace(/'/g, '&#39;')
+      .replace(/"/g, '&quot;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;');
+  }
+
+  const popupHtml = `
+    <div id="info-header">
+      <div id="info-title">
+        ${escapeHtml(museum.name)}<br>
+        ${escapeHtml(museum.name2)}<br>
+        ${escapeHtml(museum.name3)}
+      </div>
+    </div>
+    <div id="info-content">
+      <img src="../img/${museum.img}" width="300" alt="${escapeHtml(museum.name)}">
+      <div style="max-height:165px; overflow-y:auto;">
+        ${escapeHtml(museum.dsp)}
+      </div>
+    </div>
+    <br>
+    <div id="info-footer">
+      <a target="_blank" rel="noopener noreferrer" href="${museum.link}">Web Page</a>
+    </div>
+    <div id="info-footer">
+      <a target="_blank" rel="noopener noreferrer" href="${museum.link2}">展示例</a>
+    </div>
+  `;
+
+  marker.bindPopup(popupHtml, { maxWidth: 300 });
+});
+
+// Map Scale
+	L.control.scale({
+	  imperial: false,
+	  metric: true
+	}).addTo(map);
+
+// Browser Back
+	window.location.hash="no-back";
+	window.location.hash="no-back-button";
+	window.onhashchange=function(){ window.location.hash="no-back"; }
+
+</script>
+
+<iframe src="../Explain-html/Explain-IC.html" name="exp-museums" style="width: 78vw" frameborder="0"></iframe>
+
+<br>
+<A HREF="../InformationHistory.html">トップページに戻る場合はこちら</A>
+
+</div>
+
+</body>
+</html>
