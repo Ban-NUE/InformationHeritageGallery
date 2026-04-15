@@ -1,0 +1,69 @@
+name: Auto create PR on push
+
+on:
+  push:
+    branches-ignore:
+      - main
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  open-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create PR if missing
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const branch = context.ref.replace('refs/heads/', '');
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const base = 'main';
+
+            // 既存PRを確認
+            const existing = await github.rest.pulls.list({
+              owner,
+              repo,
+              state: 'open',
+              head: `${owner}:${branch}`,
+              base
+            });
+
+            let pr;
+
+            if (existing.data.length > 0) {
+              pr = existing.data[0];
+              core.info(`PR already exists: #${pr.number}`);
+            } else {
+              // PR作成
+              const created = await github.rest.pulls.create({
+                owner,
+                repo,
+                title: branch,
+                head: branch,
+                base,
+                body: 'Automatically created from push.'
+              });
+              pr = created.data;
+              core.info(`Created PR: #${pr.number}`);
+            }
+
+            // auto-merge を有効化（squash）
+            // GraphQL の enablePullRequestAutoMerge を使う
+            await github.graphql(`
+              mutation($pullRequestId: ID!) {
+                enablePullRequestAutoMerge(input: {
+                  pullRequestId: $pullRequestId,
+                  mergeMethod: SQUASH
+                }) {
+                  pullRequest {
+                    number
+                  }
+                }
+              }
+            `, {
+              pullRequestId: pr.node_id
+            });
